@@ -1,0 +1,616 @@
+/*
+Theme Name: Bicubic
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Reset Css
+ * 2.0 - Fonts
+ * 3.0 - Misc tags
+ * 4.0 - Form
+ * 5.0 - Image
+ * 6.0 - Lists
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+* 1.0 Reset Css
+* html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+* Richard Clark (http://richclarkdesign.com)
+* http://cssreset.com
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+	padding: 0 !important;
+	word-wrap: break-word;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	text-decoration: none;
+	color: inherit;
+}
+
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+	color: inherit;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: none;
+	cursor: help;
+}
+
+/*table*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ table {
+    margin: 0 0 20px;
+    width: 100%;
+    border-spacing: 0;
+}
+
+tr {
+	border-bottom: 1px solid #dbdbdb;
+}
+
+th {
+	color: #666;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+td {
+	color: #555;
+	height: 30px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+
+/**
+* 2.0 Fonts
+*------------------------------------------------------------------------------
+*/
+
+@font-face {
+	font-family: "Open Sans";
+	src: url('fonts/opensans/OpenSans-Regular.eot?');
+	src: url('fonts/opensans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/opensans/OpenSans-Regular.woff') format('woff'),
+		 url('fonts/opensans/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
+		 url('fonts/opensans/OpenSans-Regular.ttf') format('truetupe'); 
+
+}
+@font-face {
+	font-family: "Open Sans Bold";
+	src: url('fonts/opensans/OpenSans-Bold.eot?');
+	src: url('fonts/opensans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/opensans/OpenSans-Bold.woff') format('woff'),
+		 url('fonts/opensans/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
+		 url('fonts/opensans/OpenSans-Bold.ttf') format('truetupe');
+}
+
+@font-face {
+	font-family: "Droid Sans";
+	src: url('fonts/droidsans/DroidSans.eot?');
+	src: url('fonts/droidsans/DroidSans.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/droidsans/DroidSans.svg#DroidSans') format('svg'),
+		 url('fonts/droidsans/DroidSans.woff') format('woff'),
+		 url('fonts/droidsans/DroidSans.ttf') format('truetupe');
+}
+
+@font-face {
+	font-family: "Droid Sans Bold";
+	src: url('fonts/droidsans/DroidSans-Bold.eot?');
+	src: url('fonts/droidsans/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/droidsans/DroidSans-Bold.woff') format('woff'),
+		 url('fonts/droidsans/DroidSans-Bold.svg#DroidSans-Bold') format('svg'),
+		 url('fonts/droidsans/DroidSans-Bold.ttf') format('truetupe');
+}
+
+
+/**
+* 3.0 Misc tags
+*--------------------------------------------------------------------------------
+*/
+
+body#tinymce{
+	background-color: #eee;
+	font-family: "Droid sans", "Open Sans";
+	font-size: 13px;
+	padding: 53px 27px 6px 30px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0 0 23px;
+	font-family:  "Open Sans Bold";
+	color: #424242;
+	margin: 0;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 23px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 17px;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+h5 {
+	font-size: 13px;
+}
+
+h6 {
+	font-size: 11px;
+}
+
+p {
+	padding: 0;
+	color: #555;
+	line-height: 1.68;
+	margin: 0 0 17px;
+}
+
+a {
+	color: #63AC2E;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #555;
+}
+
+h2 a {
+	color: #555 !important;
+}
+
+sup {
+	color: #9f9f9f;
+	font-size: 89%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+sub {
+	color: #9f9f9f;
+	font-size: 89%;
+	position: relative;
+	top: 3px;
+	
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 600;
+}
+
+abbr,
+acronym {
+	border: none;
+	color: #9f9f9f;
+	cursor: help;
+}
+
+big {
+	font-size: 17px;
+	font-weight: 600;
+}
+
+pre {
+	display: block;
+	padding: 14px 14px 12px 20px;
+	margin: 0 0 16px;
+	border: 1px solid #cecece;
+	background-color: #fff;
+	color: #999;
+	font-family: "Courier New", serif;
+	margin-left: -1px;
+	line-height: 1.62;
+	overflow: auto;
+}
+
+code,
+kbd,
+tt,
+var {
+	padding: 0 5px;
+	border: 1px solid #cecece;
+	background-color: #fff;
+	color: #999;
+	font-family: "Courier New", serif;
+	font-style: normal;
+}
+
+/*Blockquote*/
+blockquote {
+	display: block;
+	padding: 8px 0;
+
+}
+
+blockquote p {
+	quotes: "\02BA" "\02BA";
+}
+
+blockquote p:first-child:before {
+	content: open-quote;
+	padding-left: 29px;
+	background: url(image/sprites.png) no-repeat;
+	background-color: transparent;
+	background-position: 0 -216px;
+	width: 18px;
+	height: 13px;
+}
+
+blockquote p:after {
+	content: close-quote;
+    	padding: 0 0 6px;
+}
+
+cite {
+	font-family: "Droid Sans Bold", "Open Sans Bold";
+	font-size: 13px;
+	font-style: normal;
+	padding-top: 2px;
+}
+
+blockquote cite:before{
+	content: "- \0020";
+}
+
+/*address tag*/
+address {
+	color: #555;
+	line-height: 1.62;
+	margin: 0 0 17px;
+}
+
+/**
+ * 4.0 Form
+ * ----------------------------------------------------------------------------
+ */
+
+form {
+	color: #555;
+}
+
+form span{
+	padding-bottom: 13px;
+	display: block;
+}
+
+form p {
+	padding: 0;
+	margin: 0 0 10px;
+}
+
+/*Input text*/
+input[type="text"],
+input[type="password"],
+textarea {
+	border: 1px solid #cecece;
+	border-radius: 5px;
+	background-color: #fcfcfc;
+	-webkit-appearance: none;
+	outline: none;
+}
+
+input[type="text"],
+input[type="password"] {
+	height: 47px;
+	width: 200px;
+	padding: 0 10px;
+}
+
+/*Textarea*/
+textarea {
+	height: 97px;
+	padding: 10px 0 0 10px;
+	width: 210px;
+	max-width: 531px;
+	max-height: 200px;
+	margin: 0 0 9px -1px;
+}
+
+select {
+	height: 49px;
+	width: 223px;
+	border-radius: 5px;
+	border: 1px solid #cecece;
+	background-color: #fff;
+	padding: 15px 0 15px 4px;
+	margin: 0 0 13px;
+}
+
+/**
+* 5.0 Image
+* ------------------------------------------------------------------------------
+*/
+
+.alignleft {
+	float: left;
+}
+
+img.alignleft,
+.wp-caption.alignleft {
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;
+}
+
+img.alignright,
+.wp-caption.alignright  {
+	margin-left: 15px;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bicubic-img-title {
+	padding: 11px 0 21px;
+	color: #999;
+}
+
+.wp-caption-text,
+.gallery-caption {
+	color: #999;
+}
+
+img,
+.wp-caption {
+	max-width: 100%;
+	height: auto;
+}
+
+.wp-caption-dd,
+.gallery-caption {
+    color: #999999;
+}
+
+/**
+* 6.0 Lists
+* ------------------------------------------------------------------------------
+*/
+
+dt {
+	padding: 0 0 8px 30px;
+	font-size: 15px;
+	font-family: "Droid Sans Bold", "Open Sans Bold";
+	color: #424242;
+}
+
+dd {
+	padding: 0 0 28px 30px;
+	margin: 0;
+	color: #555;
+}
+
+ol {
+	padding: 0 10px 0 48px;
+	list-style: decimal;
+	list-style-position: outside;
+	margin: 0;
+}
+
+ol li {
+	color: #555;
+	padding: 0 0 14px 3px;
+}
+
+ul { 
+	padding: 0 10px 0 33px;
+	margin-bottom: 16px;
+	color: #aaa;
+	list-style-position: outside;
+	list-style: none;
+	margin: 0;
+}
+
+ul > li {
+	color: #555;
+	background: url(../image/ul-marker.png) no-repeat 0 8px;
+	padding: 0 0 0 17px;
+	margin-bottom: 5px;
+	line-height: 1.68;
+
+}
+
+ol ul,
+ul ul {
+	padding: 0 10px 0 16px;
+}
+
+ul ol,
+ol ol {
+	padding: 0 10px 0 24px;
+}
+
+ol > li {
+	padding: 0 0 0 3px;
+	margin-bottom: 5px;
+	line-height: 1.68;
+}
+
+li ul,
+li ol {
+	margin: 5px 0 0 0;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: upper-roman;
+}

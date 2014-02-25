@@ -1,0 +1,109 @@
+/*Special stylesheet for IE 7-9*/
+/* Correct img */
+img,
+.wp-caption {
+ 	width: inherit !important;
+}
+
+.textwidget img {
+	max-width: 100%;
+	height: auto;
+	//width: inherit;
+}
+.gallery dt img {
+	//width: inherit;
+}
+
+/* Correct form fields*/
+input[type="text"],
+input[type="password"] {
+	overflow: visible;
+	padding: 15px 10px;
+	height: 17px;
+}
+
+.bicubic-custom-file {
+	//overflow: hidden;
+	//height: 48px;
+}
+
+.bicubic-custom-file-text {
+	height: 30px;
+}
+
+#s {
+	overflow: visible;
+	padding: 15px 10px;
+	height: 17px;	
+}
+
+.bicubic-radio,
+.bicubic-check {
+	//display: inline;
+	//zoom: 1;
+	//text-indent: 0;	
+}
+
+#search > div {
+	*width: 230px;	
+}
+
+#search-submit {
+	*height: 48px;	
+}
+
+p {
+	text-indent: 0;
+}
+
+.bicubic-reset-form input[type="reset"] {
+	//padding: 0 8px !important;
+}
+
+.bicubic-submit-button input[type="submit"] {
+	//padding: 0 8px !important;
+}
+
+textarea {
+	overflow: hidden;
+}
+
+input[type="text"]::-ms-clear {
+	display: none;
+}
+
+.bicubic-active-opt {
+	position: relative;
+}
+
+/* Correct footer */
+#powered {
+	//position: relative;
+	//top: -12px;
+}
+
+/* Correct img for gallery plugin */
+#fancybox-content img {
+	max-width: 100% !important;
+}
+
+/* Correct title */
+#title {
+	cursor: pointer;
+}
+
+/* Correct table */
+.post th,
+.page th,
+.comment th,
+.post td,
+.page td,
+.comment td {
+	//border-bottom: 1px solid #dbdbdb;
+}
+
+/* Correct search form at content area */
+.entry-content #search {
+	//width: 230px;
+	*width: 230px;
+}
