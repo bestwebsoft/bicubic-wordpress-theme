@@ -11,7 +11,6 @@
 		<!-- title of the blog -->
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 		<meta http-equiv="Content-type" content="<?php bloginfo( 'html_type' ); ?>" charset="<?php bloginfo( 'charset' );?>"/>
-		<meta name="generator" content="WordPress <?php bloginfo( 'version' ); ?>" />
 		<?php wp_head(); ?>
 	</head><!-- head -->
 	<body <?php body_class(); ?>>

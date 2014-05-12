@@ -6,14 +6,15 @@
  * @since Bicubic 1.0
  */
 
-if ( !empty( $_SERVER[ 'SCRIPT_FILENAME' ] ) && 'comments.php' == basename( $_SERVER[ 'SCRIPT_FILENAME' ] ) )
-	die ( 'Please do not load this page directly. Thanks!' );
-if ( post_password_required() ) { ?>
-	<p class="nocomments"><?php _e( 'This post is password protected. Enter the password to view comments.', 'bicubic' ); ?></p>
-<?php return;
-}
-// if have some comments show them
-if ( have_comments() ) : ?>
+/*
+* If the current post is protected by a password and
+* the visitor has not yet entered the password we will
+* return early without loading the comments.
+*/
+if ( post_password_required() ) {
+	return;
+} ?>
+<?php if ( have_comments() ) : ?>
 	<div class="bicubic-comments">
 		<!-- title of the commentlist -->
 		<h3 id="comments">

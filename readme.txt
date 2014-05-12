@@ -2,9 +2,9 @@
 Contributors: the BestWebSoft team
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: gray, green, right-sidebar, fixed-layout, custom-menu, featured-images, translation-ready, custom-background, custom-header, editor-style
-Requires at least: 3.3
-Tested up to: 3.8.1
-Stable tag: 1.2
+Requires at least: 3.7
+Tested up to: 3.9
+Stable tag: 1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -103,6 +103,10 @@ In main catalog of your WordPress site find wp-config.php file, open it and chan
 
 == Changelog ==
 
+= V1.3 - 07.05.2014 = 
+* Update: We updated all functionality for wordpress 3.9.
+* Update: Removed unnecessary code.
+
 = V1.2 - 14.01.2014 = 
 * Update: The page/post blank title bug was fixed.
 
@@ -122,6 +126,9 @@ In main catalog of your WordPress site find wp-config.php file, open it and chan
 * NEW: Bicubic theme release.
 
 == Upgrade Notice ==
+
+= V1.3 =
+We updated all functionality for wordpress 3.9. Removed unnecessary code.
 
 = V1.2 = 
 The page/post blank title bug was fixed.
