@@ -10,7 +10,7 @@
 	<head>
 		<!-- title of the blog -->
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
-		<meta http-equiv="Content-type" content="<?php bloginfo( 'html_type' ); ?>" charset="<?php bloginfo( 'charset' );?>"/>
+		<meta charset="<?php bloginfo( 'charset' ); ?>"/>
 		<?php wp_head(); ?>
 	</head><!-- head -->
 	<body <?php body_class(); ?>>
@@ -20,7 +20,7 @@
 				<!--title of the blog: display first and second letters in gray color  -->
 				<?php $title_first_letters = substr( get_bloginfo(), 0, 2 ); 				
 					$title_other_letters = substr( get_bloginfo(), 2 ) ;?>
-				<h1 id="header" style="<?php if ( get_header_textcolor() == 'blank' ) { echo 'visibility:hidden;'; } else { ?> color:#<?php echo get_header_textcolor(); } ?>"><a href="<?php echo home_url(); ?>"><?php echo '<span class="bicubic-letters">' . $title_first_letters . '</span>' . $title_other_letters ;?></a></h1>
+				<h1 id="header" style="<?php if ( get_header_textcolor() == 'blank' ) { echo 'visibility:hidden;'; } else { ?> color:#<?php echo get_header_textcolor(); } ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo '<span class="bicubic-letters">' . $title_first_letters . '</span>' . $title_other_letters ;?></a></h1>
 				<!-- incert a search form in header -->
 				<?php get_search_form(); ?>
 				<div class="bicubic-clear"></div>

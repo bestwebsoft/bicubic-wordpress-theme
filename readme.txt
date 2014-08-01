@@ -3,17 +3,16 @@ Contributors: the BestWebSoft team
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: gray, green, right-sidebar, fixed-layout, custom-menu, featured-images, translation-ready, custom-background, custom-header, editor-style
 Requires at least: 3.7
-Tested up to: 3.9
-Stable tag: 1.3
+Tested up to: 3.9.1
+Stable tag: 1.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Bicubic Wordpress theme is a simple  solution to customize your website.
+Bicubic Wordpress theme is a simple solution to customize your website.
 
 == Description ==
 
-Bicubic Wordpress theme is a simple solution to customize your website. It`s a clean, simple and very powerful tool for organizing your blog or other categories of websites.
-You may change some design elements from Admin UI like: background of page, header image.
+Bicubic is a beautiful theme built for news and blogging. It was created for easy reading. Each post-type is displayed in the way to give maximum attention to your content. With Bicubic Theme scrolling becomes a pleasurable journey. The design is neither overbearing nor busy. Each element of Bicubic has been designed with meticulous detail to provide you with full control over your page. It allows you to present your content in a clear and structured manner. Bicubic is fully compliant with BestWebSoft products, thus, such plugins, as PDF & Print (http://wordpress.org/plugins/pdf-print/) and Gallery (http://wordpress.org/plugins/gallery-plugin/) will suit your website perfectly. That is why, if you install this Theme you will prevent any possible compatibility troubles as well as extend your site's functionality significantly. Check out this theme's demo at http://bestwebsoft.com/wordpress_demo_theme/bicubic/
 
 == Installation ==
 
@@ -103,6 +102,14 @@ In main catalog of your WordPress site find wp-config.php file, open it and chan
 
 == Changelog ==
 
+= V1.5 - 31.07.2014 = 
+* Bugfix: We fixed bugs in header.php, searchform.php.
+
+= V1.4 - 29.07.2014 = 
+* Update: We updated all functionality for wordpress 3.9.1. 
+* New: We added bicubic.pot file. 
+* Bugfix: We fixed bugs in script.js.
+
 = V1.3 - 07.05.2014 = 
 * Update: We updated all functionality for wordpress 3.9.
 * Update: Removed unnecessary code.
@@ -126,6 +133,12 @@ In main catalog of your WordPress site find wp-config.php file, open it and chan
 * NEW: Bicubic theme release.
 
 == Upgrade Notice ==
+
+= V1.5 = 
+We fixed bugs in header.php, searchform.php.
+
+= V1.4 =
+We updated all functionality for wordpress 3.9.1. We fixed bugs in script.js. We added bicubic.pot file. 
 
 = V1.3 =
 We updated all functionality for wordpress 3.9. Removed unnecessary code.

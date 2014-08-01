@@ -6,7 +6,7 @@
  * @since Bicubic 1.0
  */
 ?>
-<form name="search-form" id="search" action =" <?php echo home_url(); ?> " method="get">
+<form name="search-form" id="search" action ="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 	<div>
 		<!-- search field -->
 		<div id="search-div-left">

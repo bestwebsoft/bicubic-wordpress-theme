@@ -1,9 +1,9 @@
 /*
 Theme Name: Bicubic
 Theme URI: http://bestwebsoft.com/theme/bicubic/
-Description: Bicubic Wordpress theme is simply solution to customize your website. It`s clean, simply and very powerful tool for organizing your blog or others categories of websites..
+Description: Bicubic is a beautiful theme built for news and blogging. It was created for easy reading. Each post-type is displayed in the way to give maximum attention to your content. With Bicubic Theme scrolling becomes a pleasurable journey. The design is neither overbearing nor busy. Each element of Bicubic has been designed with meticulous detail to provide you with full control over your page. It allows you to present your content in a clear and structured manner. Bicubic is fully compliant with BestWebSoft products, thus, such plugins, as PDF & Print (http://wordpress.org/plugins/pdf-print/) and Gallery (http://wordpress.org/plugins/gallery-plugin/) will suit your website perfectly. That is why, if you install this Theme you will prevent any possible compatibility troubles as well as extend your site's functionality significantly. Check out this theme's demo at http://bestwebsoft.com/wordpress_demo_theme/bicubic/
 You may change some design elements from Admin UI, like: background of page, header image.
-Version: 1.3
+Version: 1.5
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/
 Author: the BestWebSoft team
@@ -513,6 +513,7 @@ form p {
 /*Input text*/
 input[type="text"],
 input[type="password"],
+input[type="email"],
 textarea {
 	border: 1px solid #cecece;
 	border-radius: 5px;
@@ -522,7 +523,8 @@ textarea {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
 	height: 47px;
 	width: 200px;
 	padding: 0 10px;
@@ -761,7 +763,8 @@ select {
 }
 
 .bicubic-reset-form input[type="reset"],
-.bicubic-submit-button input[type="submit"] {
+.bicubic-submit-button input[type="submit"],
+input[type="button"] {
     border: 1px solid #cecece;
     border-radius: 5px 5px 5px 5px;
     height: 49px;
@@ -778,7 +781,8 @@ select {
 }
 
 .bicubic-reset-form input[type="reset"]:hover,
-.bicubic-submit-button input[type="submit"]:hover {
+.bicubic-submit-button input[type="submit"]:hover,
+input[type="button"]:hover {
 	background-color: #63ac2e;
 	color: #fff;
 	border-color: #63ac2e;

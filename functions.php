@@ -174,4 +174,3 @@ add_action( 'after_setup_theme', 'bicubic_setup' );
 add_filter( 'wp_title', 'bicubic_wp_title', 10, 2 );
 add_action( 'wp_enqueue_scripts', 'bicubic_scripts_styles' );
 add_action( 'wp_print_scripts', 'bicubic_ie', 8 );
-?>

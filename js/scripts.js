@@ -67,11 +67,6 @@
 			// reset input:file
 			$( this ).closest( 'form' ).find( '.bicubic-custom-file-text' ).text( choose_file );
 			$( this ).closest( 'form' ).find( '.bicubic-custom-file-status' ).text( file_is_not_selected );			
-			// reset select
-			$( this ).closest( 'form' ).find( '.bicubic-active-opt' ).find( 'div:first' ).text( $( this ).closest( 'form' ).find( 'select' ).find( 'option:first' ).text() );
-			$( this ).closest( 'form' ).find( 'select' ).find( 'option' ).each( function () {
-					$( this ).removeAttr( 'selected' );
-			});
 		});
 
 		/*
@@ -379,3 +374,36 @@ function CreateSelect( k ) {
 	} )( jQuery );
 	return sel;
 }
+
+( function( $ ) {
+	$(document).ready(function() {
+		/* Check of previous selected items */
+		$( 'select' ).each(function() {
+			var index = $( this ).find( "option[selected]" ).index();
+			if (index >= 0) {
+				/*add attr selected to select*/
+				var selected_select = $( this ).find( "option[selected]" ).parent().next().find( ".bicubic-active-opt" ).find( "div:first" );
+				/*write text to active opt*/
+				selected_select.text( $( this ).find( "option[selected]" ).text() );
+			}
+		});
+		/* Clear select elements */
+		$( 'input:reset' ).click( function() {
+			/* Clear original selects. */
+			$( 'select' ).each(function() {
+				/* set path */
+				var clear_select = $( this ).find( "option:first" );
+				var clear_selected_select = $( this ).find( "option[selected]" );
+				/* clear active opt */
+				$( clear_selected_select ).removeAttr( 'selected' );
+				$( clear_select ).attr( 'selected', 'selected' );
+			});
+			/* Clear custom selects. */
+			$( '.bicubic-select' ).each(function() {
+				var clear_select = $( this ).find( ".bicubic-active-opt" ).find( "div:first" );
+				$( clear_select ).text( $( this ).prev().find( "option:first" ).text() )
+			});
+			e.preventDefault;
+		});
+	});
+} )( jQuery );
