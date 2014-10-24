@@ -3,20 +3,20 @@
 
 Bicubic Wordpress theme is a simple solution to customize your website. Its a clean, simple and very powerful tool for organizing your blog or other categories of websites. You may change some design elements from Admin UI like: background of page, header image.
 
-<img src="http://bestwebsoft.com/wp-content/uploads/2014/01/banner-wp-bicubic.jpg" />
+<img src="http://bestwebsoft.com/wp-content/uploads/2014/09/bicubic-wp-banner.jpg" />
 
-<a href="http://bestwebsoft.com/theme/bicubic/#description" target=_blank>Description</a> | 
-<a href="http://bestwebsoft.com/theme/bicubic/#installation" target=_blank>Installation</a> | 
-<a href="http://bestwebsoft.com/theme/bicubic/#faq" target=_blank>FAQ</a> | 
-<a href="http://bestwebsoft.com/theme/bicubic/#screenshots" target=_blank>Screenshots</a> | 
-<a href="http://bestwebsoft.com/theme/bicubic/#changelog" target=_blank>Changelog</a> | 
-<a href="http://bestwebsoft.com/theme/bicubic/#download" target=_blank>Download</a>
+<a href="http://bestwebsoft.com/products/bicubic/description" target=_blank>Description</a> | 
+<a href="http://bestwebsoft.com/products/bicubic/installation" target=_blank>Installation</a> | 
+<a href="http://bestwebsoft.com/products/bicubic/faq" target=_blank>FAQ</a> | 
+<a href="http://bestwebsoft.com/products/bicubic/screenshots" target=_blank>Screenshots</a> | 
+<a href="http://bestwebsoft.com/products/bicubic/changelog" target=_blank>Changelog</a> | 
+<a href="http://bestwebsoft.com/products/bicubic/download" target=_blank>Download</a>
 
 
 Translation
 -----------------------------
 * Russian (ru_RU)
-
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 Copyrights for Resources used in this theme.
 -----------------------------
