@@ -3,7 +3,6 @@ Theme Name: Bicubic
 Description: Used to style the TinyMCE editor.
 */
 
-
 /**
  * Table of Contents:
  *
@@ -138,7 +137,6 @@ q:after {
 	content: none;
 }
 
-}
 a {
 	margin: 0;
 	padding: 0;
@@ -178,10 +176,10 @@ table {
 	border-spacing: 0;
 }
 
- table {
-    margin: 0 0 20px;
-    width: 100%;
-    border-spacing: 0;
+table {
+	margin: 0 0 20px;
+	width: 100%;
+	border-spacing: 0;
 }
 
 tr {
@@ -190,8 +188,8 @@ tr {
 
 th {
 	color: #666;
-    letter-spacing: 1px;
-    line-height: 30px;
+	letter-spacing: 1px;
+	line-height: 30px;
 }
 
 td {
@@ -216,7 +214,6 @@ select {
 	vertical-align: middle;
 }
 
-
 /**
 * 2.0 Fonts
 *------------------------------------------------------------------------------
@@ -224,47 +221,47 @@ select {
 
 @font-face {
 	font-family: "Open Sans";
-	src: url('fonts/opensans/OpenSans-Regular.eot?');
-	src: url('fonts/opensans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/opensans/OpenSans-Regular.woff') format('woff'),
-		 url('fonts/opensans/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
-		 url('fonts/opensans/OpenSans-Regular.ttf') format('truetupe'); 
+	src: url('../fonts/opensans/OpenSans-Regular.eot?');
+	src: url('../fonts/opensans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/opensans/OpenSans-Regular.woff') format('woff'),
+	url('../fonts/opensans/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
+	url('../fonts/opensans/OpenSans-Regular.ttf') format('truetupe');
 
 }
+
 @font-face {
 	font-family: "Open Sans Bold";
-	src: url('fonts/opensans/OpenSans-Bold.eot?');
-	src: url('fonts/opensans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/opensans/OpenSans-Bold.woff') format('woff'),
-		 url('fonts/opensans/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
-		 url('fonts/opensans/OpenSans-Bold.ttf') format('truetupe');
+	src: url('../fonts/opensans/OpenSans-Bold.eot?');
+	src: url('../fonts/opensans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/opensans/OpenSans-Bold.woff') format('woff'),
+	url('../fonts/opensans/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
+	url('../fonts/opensans/OpenSans-Bold.ttf') format('truetupe');
 }
 
 @font-face {
 	font-family: "Droid Sans";
-	src: url('fonts/droidsans/DroidSans.eot?');
-	src: url('fonts/droidsans/DroidSans.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/droidsans/DroidSans.svg#DroidSans') format('svg'),
-		 url('fonts/droidsans/DroidSans.woff') format('woff'),
-		 url('fonts/droidsans/DroidSans.ttf') format('truetupe');
+	src: url('../fonts/droidsans/DroidSans.eot?');
+	src: url('../fonts/droidsans/DroidSans.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/droidsans/DroidSans.svg#DroidSans') format('svg'),
+	url('../fonts/droidsans/DroidSans.woff') format('woff'),
+	url('../fonts/droidsans/DroidSans.ttf') format('truetupe');
 }
 
 @font-face {
 	font-family: "Droid Sans Bold";
-	src: url('fonts/droidsans/DroidSans-Bold.eot?');
-	src: url('fonts/droidsans/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/droidsans/DroidSans-Bold.woff') format('woff'),
-		 url('fonts/droidsans/DroidSans-Bold.svg#DroidSans-Bold') format('svg'),
-		 url('fonts/droidsans/DroidSans-Bold.ttf') format('truetupe');
+	src: url('../fonts/droidsans/DroidSans-Bold.eot?');
+	src: url('../fonts/droidsans/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/droidsans/DroidSans-Bold.woff') format('woff'),
+	url('../fonts/droidsans/DroidSans-Bold.svg#DroidSans-Bold') format('svg'),
+	url('../fonts/droidsans/DroidSans-Bold.ttf') format('truetupe');
 }
-
 
 /**
 * 3.0 Misc tags
 *--------------------------------------------------------------------------------
 */
 
-body#tinymce{
+body#tinymce {
 	background-color: #eee;
 	font-family: "Droid sans", "Open Sans";
 	font-size: 13px;
@@ -278,7 +275,7 @@ h4,
 h5,
 h6 {
 	padding: 0 0 23px;
-	font-family:  "Open Sans Bold";
+	font-family: "Open Sans Bold";
 	color: #424242;
 	margin: 0;
 	font-weight: 300;
@@ -341,7 +338,7 @@ sub {
 	font-size: 89%;
 	position: relative;
 	top: 3px;
-	
+
 }
 
 em {
@@ -367,12 +364,11 @@ big {
 pre {
 	display: block;
 	padding: 14px 14px 12px 20px;
-	margin: 0 0 16px;
 	border: 1px solid #cecece;
 	background-color: #fff;
 	color: #999;
 	font-family: "Courier New", serif;
-	margin-left: -1px;
+	margin: 0 0 16px -1px;
 	line-height: 1.62;
 	overflow: auto;
 }
@@ -403,16 +399,14 @@ blockquote p {
 blockquote p:first-child:before {
 	content: open-quote;
 	padding-left: 29px;
-	background: url(image/sprites.png) no-repeat;
-	background-color: transparent;
-	background-position: 0 -216px;
+	background: transparent url(../image/sprites.png) no-repeat 0 -216px;
 	width: 18px;
 	height: 13px;
 }
 
 blockquote p:after {
 	content: close-quote;
-    	padding: 0 0 6px;
+	padding: 0 0 6px;
 }
 
 cite {
@@ -422,7 +416,7 @@ cite {
 	padding-top: 2px;
 }
 
-blockquote cite:before{
+blockquote cite:before {
 	content: "- \0020";
 }
 
@@ -442,7 +436,7 @@ form {
 	color: #555;
 }
 
-form span{
+form span {
 	padding-bottom: 13px;
 	display: block;
 }
@@ -509,7 +503,7 @@ img.alignleft,
 }
 
 img.alignright,
-.wp-caption.alignright  {
+.wp-caption.alignright {
 	margin-left: 15px;
 }
 
@@ -537,7 +531,7 @@ img,
 
 .wp-caption-dd,
 .gallery-caption {
-    color: #999999;
+	color: #999999;
 }
 
 /**
@@ -560,8 +554,7 @@ dd {
 
 ol {
 	padding: 0 10px 0 48px;
-	list-style: decimal;
-	list-style-position: outside;
+	list-style: decimal outside;
 	margin: 0;
 }
 
@@ -570,12 +563,10 @@ ol li {
 	padding: 0 0 14px 3px;
 }
 
-ul { 
+ul {
 	padding: 0 10px 0 33px;
-	margin-bottom: 16px;
 	color: #aaa;
-	list-style-position: outside;
-	list-style: none;
+	list-style: none outside none;
 	margin: 0;
 }
 
@@ -608,9 +599,11 @@ li ul,
 li ol {
 	margin: 5px 0 0 0;
 }
+
 ol ol {
 	list-style: upper-alpha;
 }
+
 ol ol ol {
 	list-style: upper-roman;
 }

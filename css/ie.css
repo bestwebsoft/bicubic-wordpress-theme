@@ -2,7 +2,7 @@
 /* Correct img */
 img,
 .wp-caption {
- 	width: inherit !important;
+	width: inherit !important;
 }
 
 .textwidget img {
@@ -34,22 +34,22 @@ input[type="password"] {
 #s {
 	overflow: visible;
 	padding: 15px 10px;
-	height: 17px;	
+	height: 17px;
 }
 
 .bicubic-radio,
 .bicubic-check {
 	//display: inline;
 	//zoom: 1;
-	//text-indent: 0;	
+	//text-indent: 0;
 }
 
 #search > div {
-	*width: 230px;	
+	*width: 230px;
 }
 
 #search-submit {
-	*height: 48px;	
+	*height: 48px;
 }
 
 p {

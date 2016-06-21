@@ -1,17 +1,18 @@
 /*
 Theme Name: Bicubic
-Theme URI: http://bestwebsoft.com/theme/bicubic/
-Description: Bicubic is a beautiful theme built for news and blogging. It was created for easy reading. Each post-type is displayed in the way to give maximum attention to your content. With Bicubic Theme scrolling becomes a pleasurable journey. The design is neither overbearing nor busy. Each element of Bicubic has been designed with meticulous detail to provide you with full control over your page. It allows you to present your content in a clear and structured manner. Bicubic is fully compliant with BestWebSoft products, thus, such plugins, as PDF & Print (http://wordpress.org/plugins/pdf-print/) and Gallery (http://wordpress.org/plugins/gallery-plugin/) will suit your website perfectly. That is why, if you install this Theme you will prevent any possible compatibility troubles as well as extend your site's functionality significantly. Check out this theme's demo at http://bestwebsoft.com/wordpress_demo_theme/bicubic/
+Theme URI: http://bestweblayout.com/products/bicubic/
+Author: BestWebLayout
+Author URI: http://bestweblayout.com/
+Description: Bicubic is a beautiful theme built for news and blogging. It was created for easy reading. Each post-type is displayed in the way to give maximum attention to your content. With Bicubic Theme scrolling becomes a pleasurable journey. The design is neither overbearing nor busy. Each element of Bicubic has been designed with meticulous detail to provide you with full control over your page. It allows you to present your content in a clear and structured manner. Bicubic is fully compliant with BestWebSoft products, thus, such plugins, as PDF & Print (http://wordpress.org/plugins/pdf-print/) and Gallery (http://wordpress.org/plugins/gallery-plugin/) will suit your website perfectly. That is why, if you install this Theme you will prevent any possible compatibility troubles as well as extend your site's functionality significantly. Check out this theme's demo at http://wp-demo-theme.bestweblayout.com/bicubic/
 You may change some design elements from Admin UI, like: background of page, header image.
-Version: 1.5
+Version: 1.7
 License: GNU General Public License v3
-License URI: http://www.gnu.org/licenses/
-Author: the BestWebSoft team
-Author URI: https://github.com/bestwebsoft
-Tags: gray, green, right-sidebar, fixed-layout, custom-menu, featured-images, translation-ready, custom-background, custom-header, editor-style
+License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready
 Text Domain: bicubic
+Bicubic WordPress Theme, Copyright 2016 BestWebLayout.com
+Theme Bicubic is distributed under the terms of the GNU GPL
 */
-
 
 /**
  * Table of Contents:
@@ -103,7 +104,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 menu,
 nav,
 section,
@@ -114,17 +114,17 @@ audio,
 video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+	border: 0;
 	background: transparent;
+	vertical-align: baseline;
+	font-size: 100%;
 }
 
 body {
-	line-height: 1;
 	padding: 0 !important;
 	word-wrap: break-word;
+	line-height: 1;
 }
 
 article,
@@ -134,7 +134,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 menu,
 nav,
 section {
@@ -154,16 +153,15 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
 	content: none;
 }
 
 a {
 	margin: 0;
 	padding: 0;
-	font-size: 100%;
-	vertical-align: baseline;
 	background: transparent;
+	vertical-align: baseline;
+	font-size: 100%;
 }
 
 /* change colours to suit your needs */
@@ -176,8 +174,8 @@ ins {
 mark {
 	background-color: #ff9;
 	color: #000;
-	font-style: italic;
 	font-weight: bold;
+	font-style: italic;
 }
 
 del {
@@ -191,16 +189,16 @@ abbr[title], dfn[title] {
 
 /*table*/
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
+	border-collapse: collapse;
 }
 
 .post table,
 .page table,
 .comment table {
-    margin: 0 0 20px;
-    width: 100%;
-    border-spacing: 0;
+	margin: 0 0 20px;
+	width: 100%;
+	border-spacing: 0;
 }
 
 .widget table {
@@ -212,38 +210,38 @@ table {
 .comment tr {
 	border-bottom: 1px solid #dbdbdb;
 }
+
 .post th,
 .page th,
 .comment th {
 	color: #666;
-    letter-spacing: 1px;
-    line-height: 30px;
+	letter-spacing: 1px;
+	line-height: 30px;
 }
+
 .post td,
 .page td,
 .comment td {
-	color: #555;
 	height: 30px;
+	color: #555;
 	vertical-align: middle;
 	text-align: center;
 }
 
-
 /* change border colour to suit your needs */
 hr {
 	display: block;
+	margin: 1em 0;
+	padding: 0;
 	height: 1px;
 	border: 0;
 	border-top: 1px solid #cccccc;
-	margin: 1em 0;
-	padding: 0;
 }
 
 input,
 select {
 	vertical-align: middle;
 }
-
 
 /**
 * 2.0 Fonts
@@ -256,22 +254,20 @@ select {
 	font-style: normal;
 	src: url('fonts/opensans/OpenSans-Regular.eot?');
 	src: local('test'),
-		 url('fonts/opensans/OpenSans-Regular.woff') format('woff'),
-		 url('fonts/opensans/OpenSans-Regular.ttf') format('truetupe'),
-		 url('fonts/opensans/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
-	font-weight: normal;
-	font-size: normal;
-
+	url('fonts/opensans/OpenSans-Regular.woff') format('woff'),
+	url('fonts/opensans/OpenSans-Regular.ttf') format('truetupe'),
+	url('fonts/opensans/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
 }
+
 @font-face {
 	font-family: "Open Sans Bold";
 	font-weight: normal;
 	font-style: normal;
 	src: url('fonts/opensans/OpenSans-Bold.eot?');
 	src: url('fonts/opensans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/opensans/OpenSans-Bold.woff') format('woff'),
-		 url('fonts/opensans/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
-		 url('fonts/opensans/OpenSans-Bold.ttf') format('truetupe');
+	url('fonts/opensans/OpenSans-Bold.woff') format('woff'),
+	url('fonts/opensans/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
+	url('fonts/opensans/OpenSans-Bold.ttf') format('truetupe');
 }
 
 @font-face {
@@ -280,9 +276,9 @@ select {
 	font-style: normal;
 	src: url('fonts/droidsans/DroidSans.eot?');
 	src: url('fonts/droidsans/DroidSans.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/droidsans/DroidSans.svg#DroidSans') format('svg'),
-		 url('fonts/droidsans/DroidSans.woff') format('woff'),
-		 url('fonts/droidsans/DroidSans.ttf') format('truetupe');
+	url('fonts/droidsans/DroidSans.svg#DroidSans') format('svg'),
+	url('fonts/droidsans/DroidSans.woff') format('woff'),
+	url('fonts/droidsans/DroidSans.ttf') format('truetupe');
 }
 
 @font-face {
@@ -291,11 +287,10 @@ select {
 	font-style: normal;
 	src: url('fonts/droidsans/DroidSans-Bold.eot?');
 	src: url('fonts/droidsans/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/droidsans/DroidSans-Bold.woff') format('woff'),
-		 url('fonts/droidsans/DroidSans-Bold.svg#DroidSans-Bold') format('svg'),
-		 url('fonts/droidsans/DroidSans-Bold.ttf') format('truetupe');
+	url('fonts/droidsans/DroidSans-Bold.woff') format('woff'),
+	url('fonts/droidsans/DroidSans-Bold.svg#DroidSans-Bold') format('svg'),
+	url('fonts/droidsans/DroidSans-Bold.ttf') format('truetupe');
 }
-
 
 /**
 * 3.0 Misc tags
@@ -304,9 +299,9 @@ select {
 
 body {
 	background-color: #eee;
-	font-family: "Droid sans", "Open Sans";
 	font-stretch: normal;
 	font-size: 13px;
+	font-family: "Droid sans", "Open Sans";
 }
 
 h1,
@@ -315,11 +310,11 @@ h3,
 h4,
 h5,
 h6 {
-	padding: 0 0 23px;
-	font-family:  "Open Sans Bold";
-	color: #424242;
 	margin: 0;
+	padding: 0 0 23px;
+	color: #424242;
 	font-weight: 300;
+	font-family: "Open Sans Bold";
 }
 
 h1 {
@@ -354,14 +349,14 @@ h6 {
 }
 
 #copyright {
-	max-width: 70%; 
+	max-width: 70%;
 }
 
 p {
+	margin: 0 0 17px;
 	padding: 0;
 	color: #555;
 	line-height: 1.68;
-	margin: 0 0 17px;
 }
 
 a {
@@ -370,7 +365,7 @@ a {
 }
 
 .bicubic-sidebar a:hover {
-	color: #63ac2e ;
+	color: #63ac2e;
 }
 
 h2 a {
@@ -382,19 +377,19 @@ a:focus {
 }
 
 sup {
-	color: #9f9f9f;
-	font-size: 89%;
 	position: relative;
 	top: 0;
 	left: 0;
+	color: #9f9f9f;
+	font-size: 89%;
 }
 
 sub {
-	color: #9f9f9f;
-	font-size: 89%;
 	position: relative;
 	top: 3px;
-	
+	color: #9f9f9f;
+	font-size: 89%;
+
 }
 
 em {
@@ -413,21 +408,20 @@ acronym {
 }
 
 big {
-	font-size: 17px;
 	font-weight: 600;
+	font-size: 17px;
 }
 
 pre {
 	display: block;
+	overflow: auto;
+	margin: 0 0 16px -1px;
 	padding: 14px 14px 12px 20px;
-	margin: 0 0 16px;
 	border: 1px solid #cecece;
 	background-color: #fff;
 	color: #999;
 	font-family: "Courier New", serif;
-	margin-left: -1px;
 	line-height: 1.62;
-	overflow: auto;
 }
 
 code,
@@ -438,8 +432,8 @@ var {
 	border: 1px solid #cecece;
 	background-color: #fff;
 	color: #999;
-	font-family: "Courier New", serif;
 	font-style: normal;
+	font-family: "Courier New", serif;
 }
 
 /*Blockquote*/
@@ -454,28 +448,26 @@ blockquote p {
 }
 
 blockquote p:first-child:before {
-	content: open-quote;
 	padding-left: 29px;
-	background: url(image/sprites.png) no-repeat;
-	background-color: transparent;
-	background-position: 0 -216px;
 	width: 18px;
 	height: 13px;
+	background: transparent url(image/sprites.png) no-repeat 0 -216px;
+	content: open-quote;
 }
 
 blockquote p:after {
+	padding: 0 0 6px;
 	content: close-quote;
-    	padding: 0 0 6px;
 }
 
 cite {
-	font-family: "Droid Sans Bold", "Open Sans Bold";
-	font-size: 13px;
-	font-style: normal;
 	padding-top: 2px;
+	font-style: normal;
+	font-size: 13px;
+	font-family: "Droid Sans Bold", "Open Sans Bold";
 }
 
-blockquote cite:before{
+blockquote cite:before {
 	content: "- \0020";
 }
 
@@ -490,11 +482,10 @@ blockquote cite:before{
 
 /*address tag*/
 address {
+	margin: 0 0 17px;
 	color: #555;
 	line-height: 1.62;
-	margin: 0 0 17px;
 }
-
 
 /**
  * 4.0 Form
@@ -506,8 +497,8 @@ form {
 }
 
 form p {
-	padding: 0;
 	margin: 0 0 10px;
+	padding: 0;
 }
 
 /*Input text*/
@@ -515,39 +506,40 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea {
+	outline: none;
 	border: 1px solid #cecece;
 	border-radius: 5px;
 	background-color: #fcfcfc;
 	-webkit-appearance: none;
-	outline: none;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-	height: 47px;
-	width: 200px;
 	padding: 0 10px;
+	width: 200px;
+	height: 47px;
 }
 
 /*Textarea*/
 textarea {
-	height: 97px;
+	margin: 0 0 9px -1px;
 	padding: 10px 0 0 10px;
-	width: 210px;
 	max-width: 531px;
 	max-height: 200px;
-	margin: 0 0 9px -1px;
+	width: 210px;
+	height: 97px;
 }
 
 /*Radio-buttons*/
 .bicubic-radio-section,
 .bicubic-checkbox-section {
-	padding: 0px 0 10px 29px;
 	position: relative;
 	top: -19px;
 	margin-bottom: -2px;
+	padding: 0 0 10px 29px;
 }
+
 .bicubic-checkbox-section {
 	top: -16px;
 	margin-bottom: 4px;
@@ -559,43 +551,43 @@ textarea {
 }
 
 .bicubic-radio {
-	display: inline-block;
-	padding: 3px 1px 13px 0;
-	text-indent: 26px;
-	height: 18px;
-	width: 18px;
-	margin-right: 8px;
-	cursor: pointer;
-	background-position: 0 0;
 	position: relative;
 	top: 21px;
+	display: inline-block;
+	margin-right: 8px;
+	padding: 3px 1px 13px 0;
+	width: 18px;
+	height: 18px;
+	background-position: 0 0;
+	text-indent: 26px;
+	cursor: pointer;
 }
 
-.bicubic-radio.bicubic-active{
+.bicubic-radio.bicubic-active {
 	background-position: 0 -36px;
 }
 
-.bicubic-radio.bicubic-hover{
+.bicubic-radio.bicubic-hover {
 	background-position: 0 -72px;
 }
 
 /*Checkboxes*/
 .bicubic-check {
+	position: relative;
+	top: 19px;
 	display: inline-block;
-	background-position: 0 -108px; 
-	padding: 0px 0px 15px 8px;
+	padding: 0 0 15px 8px;
 	width: 18px;
 	height: 18px;
+	background-position: 0 -108px;
 	cursor: pointer;
-	position: relative;
-	top:19px;
 }
 
 .bicubic-check input[type="checkbox"],
 .bicubic-radio input[type="radio"] {
 	position: absolute;
 	left: -30px;
- 	display: none;
+	display: none;
 
 }
 
@@ -604,144 +596,146 @@ textarea {
 }
 
 .bicubic-check.bicubic-hover {
-	background-position: 0 -180px
+	background-position: 0 -180px;
 }
 
 /*Select*/
 select {
-	height: 49px;
-	width: 223px;
-	border-radius: 5px;
-	border: 1px solid #cecece;
-	background-color: #fff;
-	padding: 15px 0 15px 4px;
 	margin: 0 0 13px;
+	padding: 15px 0 15px 4px;
+	width: 223px;
+	height: 49px;
+	border: 1px solid #cecece;
+	border-radius: 5px;
+	background-color: #fff;
 }
 
 .bicubic-select {
 	position: relative;
+	z-index: 10;
+	margin: 0 0 20px -1px;
 	width: 222px;
 	border-radius: 5px;
-	z-index: 10;
 	cursor: pointer;
-	margin: 0 0 20px -1px;
 }
 
 .bicubic-active-opt {
 	height: 47px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	color: #555
+	color: #555;
 }
 
 .bicubic-active-opt > div:first-child {
-	float:left;
-	padding: 16px 0 16px 10px;
+	float: left;
 	overflow: hidden;
-	width: 167px;
+	padding: 16px 0 16px 10px;
 	max-height: 11px;
+	width: 167px;
 }
 
 .bicubic-select-button {
-	background: url(image/sprites.png) -55px -250px no-repeat;
+	float: right;
 	width: 43px;
 	height: 47px;
-	float:right;
+	background: url(image/sprites.png) -55px -250px no-repeat;
 }
 
 .bicubic-options {
 	position: absolute;
-	background-color: #fff;
-	width: 220px;
-	display: none;
-	border: 1px solid #ddd;
 	top: 45px;
 	left: 0;
+	display: none;
+	width: 220px;
+	border: 1px solid #ddd;
+	background-color: #fff;
 }
 
-.bicubic-options .bicubic-optgroup:first-child{
-	padding: 14px 5px 6px 10px;	
+.bicubic-options .bicubic-optgroup:first-child {
+	padding: 14px 5px 6px 10px;
 }
 
 .bicubic-optgroup {
-	padding:8px 5px 8px 10px;
+	padding: 8px 5px 8px 10px;
 	color: #aaa;
 }
 
 .bicubic-option {
-    padding: 9px 5px 9px 30px;
-    cursor: pointer;
-    color: #555;
+	padding: 9px 5px 9px 30px;
+	color: #555;
+	cursor: pointer;
 }
 
 .bicubic-options .bicubic-option:last-child {
-    padding: 9px 5px 19px 30px;
+	padding: 9px 5px 19px 30px;
 }
 
 .bicubic-option:hover {
-	color: #fff;
 	background-color: #424242;
+	color: #fff;
 }
 
 /*input type=[file]*/
 .bicubic-custom-file {
-	height: 47px;
 	margin: 19px 0 15px 9px;
+	height: 47px;
 	border-radius: 5px;
 	cursor: pointer;
 }
+
 .bicubic-custom-file-content {
-	height: 100%;
-	width: 220px;
-	border-radius: 5px;
-	border: 1px solid #cecece;
-	overflow: hidden;
 	float: left;
+	overflow: hidden;
+	width: 220px;
+	height: 100%;
+	border: 1px solid #cecece;
+	border-radius: 5px;
 }
 
 .bicubic-custom-file-text {
-	height: 31px;
 	float: left;
-    padding: 17px 0 0 10px;
-    width: 167px;
-    border-radius: 5px 0 0 5px;
+	padding: 17px 0 0 10px;
+	width: 167px;
+	height: 31px;
+	border-radius: 5px 0 0 5px;
 }
+
 .bicubic-custom-file-text,
 .bicubic-select {
-	background-color: #fcfcfc;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f7f7f7));   
-    background-image: -webkit-linear-gradient(top, #fcfcfc), #f7f7f7);   
-    background-image:    -moz-linear-gradient(top, #fcfcfc), #f7f7f7);   
-    background-image:     -ms-linear-gradient(top, #fcfcfc), #f7f7f7);   
-    background-image:      -o-linear-gradient(top, #fcfcfc), #f7f7f7); 
-	background: linear-gradient(to bottom, #fcfcfc, #f7f7f7);
- 
+	background: #fcfcfc;
+	background: -moz-linear-gradient(top, #fcfcfc 0%, #f7f7f7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f7f7f7));
+	background: -webkit-linear-gradient(top, #fcfcfc 0%, #f7f7f7 100%);
+	background: -o-linear-gradient(top, #fcfcfc 0%, #f7f7f7 100%);
+	background: -ms-linear-gradient(top, #fcfcfc 0%, #f7f7f7 100%);
+	background: linear-gradient(to bottom, #fcfcfc 0%, #f7f7f7 100%);
+
 }
 
 .bicubic-custom-file-button {
+	float: left;
 	width: 43px;
 	height: 100%;
-	float: left;
 	background: url(image/sprites.png) -105px -250px no-repeat;
 }
 
 .bicubic-custom-file-status {
-	float:left;
+	float: left;
+	padding: 18px 0 18px 20px;
 	width: 210px;
-    height: 13px;
-    padding: 18px 0 18px 20px;
+	height: 13px;
 }
 
-.bicubic-custom-file input[type="file"]{
-	opacity: 0;
+.bicubic-custom-file input[type="file"] {
 	clear: both;
+	opacity: 0;
 }
 
 /*Reset Submit*/
 .bicubic-reset-form {
 	display: block;
-	clear: both;
 	float: left;
+	clear: both;
 }
 
 .bicubic-submit-button {
@@ -749,30 +743,30 @@ select {
 }
 
 #submit {
-    border: 1px solid #cecece;
-    border-radius: 5px 5px 5px 5px;
-    height: 50px;
-    font-family: "Droid Sans Bold", "Open Sans Bold";
-    background-color: #fcfcfc;
+	height: 50px;
+	border: 1px solid #cecece;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #fcfcfc;
+	font-family: "Droid Sans Bold", "Open Sans Bold";
 }
 
 #submit:hover {
+	border-color: #63ac2e;
 	background-color: #63ac2e;
 	color: #fff;
-	border-color: #63ac2e;
 }
 
 .bicubic-reset-form input[type="reset"],
 .bicubic-submit-button input[type="submit"],
 input[type="button"] {
-    border: 1px solid #cecece;
-    border-radius: 5px 5px 5px 5px;
-    height: 49px;
-    padding: 0 16px;
-    font-family: "Droid Sans Bold", "Open Sans Bold";
-    background-color: #fcfcfc;
-    margin: 15px 15px 0 0;
-    cursor: pointer;
+	margin: 15px 15px 0 0;
+	padding: 0 16px;
+	height: 49px;
+	border: 1px solid #cecece;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #fcfcfc;
+	font-family: "Droid Sans Bold", "Open Sans Bold";
+	cursor: pointer;
 }
 
 .bicubic-submit-button input[type="submit"] {
@@ -783,11 +777,10 @@ input[type="button"] {
 .bicubic-reset-form input[type="reset"]:hover,
 .bicubic-submit-button input[type="submit"]:hover,
 input[type="button"]:hover {
+	border-color: #63ac2e;
 	background-color: #63ac2e;
 	color: #fff;
-	border-color: #63ac2e;
 }
-
 
 /**
 * 5.0 Header
@@ -801,34 +794,35 @@ input[type="button"]:hover {
 
 .bicubic-header {
 	position: relative;
-	width: 100%;
 	margin: 0 auto;
+	width: 100%;
 	background-color: #eee;
 }
 
 .bicubic-header > div {
 	position: relative;
-	width: 940px;
 	margin: 0 auto;
+	width: 940px;
 }
 
 /* Title of blog */
 #title {
-	padding: 9px 0 0;
-	margin-bottom: 0;
-	color: #63AC2E;
 	float: left;
+	margin-bottom: 0;
+	padding: 9px 0 0;
+	color: #63AC2E;
 	font-size: 25px;
 }
 
 #header {
-	padding: 9px 0 0;
-	margin-bottom: 0;
-	color: #63AC2E;
 	float: left;
-	font-size: 29px;
+	margin-bottom: 0;
+	padding: 9px 0 0;
 	max-width: 70%;
+	color: #63AC2E;
+	font-size: 29px;
 }
+
 #header a {
 	color: inherit;
 
@@ -840,64 +834,64 @@ input[type="button"]:hover {
 
 /* Descriotion of blog */
 #description {
-    padding: 7px 0 24px;
-    position: relative;
-    max-width: 70%;
+	position: relative;
+	padding: 7px 0 24px;
+	max-width: 70%;
 }
 
 /* Search form */
-.bicubic-header #search { 
+.bicubic-header #search {
 	position: absolute;
+	top: 7px;
 	left: 710px;
-    top: 7px;
 }
 
 .entry-content #search-submit {
 }
 
 .entry-content #search > div {
-	width: 230px
+	width: 230px;
 }
 
 #search > div {
-	border: none;
-	background-color: #fff;
-	height: 50px;
-	border-radius: 5px;
 	overflow: hidden;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	background-color: #fff;
 }
 
 #search-div-left {
+	float: left;
+	width: 180px;
 	height: 48px;
 	border: 1px solid #dbdbdb;
-	float: left;
- 	width: 180px;
-	border-radius: 5px 0 0 5px;
 	border-right: none;
+	border-radius: 5px 0 0 5px;
 }
+
 #search-div-right {
+	float: right;
 	height: 48px;
 	border: 1px solid #63ac2e;
-	float: right;
-	border-radius:  0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
 }
 
 /* Text field in search form */
 #s {
-	-webkit-appearance: none;
-	outline: none;
-	height: 100%;
-	border: none;
-	padding: 0 0 0 10px;
 	margin: 0;
+	padding: 0 0 0 10px;
+	height: 100%;
+	outline: none;
+	border: none;
 	background-color: transparent;
 	color: #555;
+	-webkit-appearance: none;
 }
 
 #s::-webkit-search-cancel-button {
 	display: none;
 }
-
 
 /* Placeholder for mozilla and chrome/safari */
 #s::-moz-placeholder {
@@ -910,16 +904,16 @@ input[type="button"]:hover {
 
 /* Submit button in search form */
 #search-submit {
+	width: 47px;
 	height: 100%;
-    width: 47px;
-    border: none;
-    background: url(image/sprites.png) no-repeat;
-    background-position: 0 -250px;
+	border: none;
+	background: url(image/sprites.png) no-repeat 0 -250px;
 }
 
-#search-submit:hover{
+#search-submit:hover {
 	cursor: pointer;
 }
+
 #search-submit::-moz-focus-inner {
 	border: none;
 }
@@ -937,8 +931,8 @@ input[type="button"]:hover {
 #nav {
 	top: 116px;
 	padding: 0;
-	border: 1px solid #dbdbdb;
 	width: 938px;
+	border: 1px solid #dbdbdb;
 	background-color: transparent;
 	list-style: none;
 }
@@ -948,19 +942,19 @@ input[type="button"]:hover {
 }
 
 #nav ul li {
-	display: block;
 	position: relative;
-	padding: 0;
+	display: block;
 	float: left;
+	margin: 0;
+	padding: 0;
 	height: 70px;
 	background: none;
-	margin: 0;
 }
 
 #nav ul li a {
 	display: block;
-	height: auto;
 	padding: 27px 20px 30px;
+	height: auto;
 	color: #333;
 	line-height: 1;
 }
@@ -979,10 +973,9 @@ input[type="button"]:hover {
 	color: #fff !important;
 }
 
-#nav .current_page_item a:hover{
+#nav .current_page_item a:hover {
 	color: #fff;
 }
-
 
 /**
 * 5.3 Sub Menu
@@ -991,33 +984,34 @@ input[type="button"]:hover {
 
 #nav ul .sub-menu,
 #nav ul li .children {
-	display: none;
 	position: absolute;
 	top: 69px;
 	left: 0;
+	z-index: 100;
+	display: none;
+	margin: 0;
 	padding: 0;
 	border: 1px solid #dbdbdb;
 	background-color: white;
-	margin: 0;
-	z-index: 100;
 }
 
 #nav ul .sub-menu li,
 #nav ul .children li {
 	position: relative;
-	border-bottom: 1px dashed #dbdbdb;
-	height: auto;
-	width: 220px;
 	clear: both;
+	width: 220px;
+	height: auto;
+	border-bottom: 1px dashed #dbdbdb;
 }
 
 #nav ul .sub-menu li a,
 #nav ul .children li a {
-	height: auto;
 	padding: 17px 19px;
+	height: auto;
 	color: #999;
 }
-#nav ul .sub-menu li a:hover{
+
+#nav ul .sub-menu li a:hover {
 	color: #63ac2e;
 }
 
@@ -1028,19 +1022,19 @@ input[type="button"]:hover {
 
 #nav ul li > .sub-menu li:hover > .sub-menu,
 #nav ul li > .children li:hover > .children {
-	display: block;
-	left: 100%;
 	top: 15%;
+	left: 100%;
+	display: block;
 }
 
 #nav .bicubic-nav-menu ul {
 	margin: 0;
 }
+
 /* Class for the last element in sub-menu for remove bottom border */
 .bicubic-no-border-bottom {
 	border-bottom: 0 !important;
 }
-
 
 /**
 * 6.0 Site Content
@@ -1062,8 +1056,8 @@ input[type="button"]:hover {
 
 .entry-content,
 #container {
-	width: 599px;
 	float: left;
+	width: 599px;
 	background-color: transparent;
 }
 
@@ -1076,7 +1070,6 @@ input[type="button"]:hover {
 #content a:hover {
 	color: #999;
 }
-
 
 /**
 * 6.2 Post
@@ -1121,9 +1114,9 @@ body.search-no-results .post {
 
 .bicubic-post-title h2 {
 	padding: 0;
-	font-size: 21px;
-	word-wrap: break-word;
 	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-size: 21px;
 }
 
 .bicubic-post-date {
@@ -1136,10 +1129,10 @@ body.search-no-results .post {
 }
 
 .bicubic-sticky-indicator {
+	margin-bottom: 15px;
+	padding: 10px 0;
 	border: 1px solid #dbdbdb;
 	text-align: center;
-	padding: 10px 0;
-	margin-bottom: 15px;
 }
 
 .bicubic-sticky-indicator h2 {
@@ -1170,7 +1163,7 @@ audio {
 }
 
 audio a {
-	display: block;	
+	display: block;
 }
 
 /*attachment*/
@@ -1187,14 +1180,14 @@ body.attachment #respond {
 }
 
 .bicubic-attachment {
+	padding: 20px 0;
 	border-top: 1px solid #dbdbdb;
 	border-bottom: 1px solid #dbdbdb;
-	padding: 20px 0;
 }
 
 .bicubic-attachment img {
-	display: block;
 	position: relative;
+	display: block;
 	margin: 0 auto;
 	max-width: 90%;
 	height: auto;
@@ -1206,7 +1199,6 @@ body.attachment #respond {
 	text-align: center;
 }
 
-
 /**
 * 6.3 Comments
 * ------------------------------------------------------------------------------
@@ -1215,15 +1207,15 @@ body.attachment #respond {
 .bicubic-comments,
 #respond {
 	padding: 54px 30px 10px;
-	background-color: transparent;
 	border-bottom: 1px solid #dbdbdb;
+	background-color: transparent;
 }
 
 .nocomments {
- 	padding: 53px 27px 6px 30px;
+	padding: 53px 27px 6px 30px;
+	border-bottom: 1px solid #dbdbdb;
 	font-size: 21px;
 	font-family: "Open Sans Bold";
-	border-bottom: 1px solid #dbdbdb;
 }
 
 .bicubic-comments-navigation {
@@ -1233,26 +1225,26 @@ body.attachment #respond {
 }
 
 .vcard {
-	width: 100%;
-	padding-bottom: 5px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #dbdbdb;
+	padding-bottom: 5px;
 	min-height: 45px;
+	width: 100%;
+	border-bottom: 1px solid #dbdbdb;
 }
 
 .commentlist > li {
-	border: 1px solid #dbdbdb;
-	padding: 10px;
 	margin: 0 0 10px;
+	padding: 10px;
+	border: 1px solid #dbdbdb;
 	background: none;
 	list-style: none;
 	line-height: 1.68;
 }
 
 .commentlist .children > li {
-	border-top: 1px solid #dbdbdb;
-	padding: 10px 10px 0;
 	margin: 0 0 10px;
+	padding: 10px 10px 0;
+	border-top: 1px solid #dbdbdb;
 	line-height: 1.68;
 }
 
@@ -1267,7 +1259,6 @@ body.attachment #respond {
 .comment-meta {
 	padding: 0 0 0 15px;
 }
-
 
 .comment-body p {
 	clear: both;
@@ -1293,9 +1284,9 @@ body.attachment #respond {
 
 /*comment form*/
 #commentform label {
+	position: relative;
 	display: block;
 	width: 100%;
-	position: relative;
 }
 
 #commentform input[type='text'] {
@@ -1378,7 +1369,7 @@ body.attachment #respond {
 }
 
 #fancybox-wrap img {
-	max-width: 100%
+	max-width: 100%;
 }
 
 .single-gallery #content .bicubic-comments {
@@ -1389,25 +1380,26 @@ body.attachment #respond {
 	margin: 10px 0;
 	text-align: center;
 }
+
 .gallery_box > ul {
 	padding: 0 !important;
 }
 
 .gallery_box {
 	float: none !important;
-	padding: 0px 27px 0px 30px;
+	padding: 0 27px 0 30px;
 	border-bottom: 1px solid #dbdbdb;
 }
 
 .gallery_box_single {
-	padding: 0px 27px 0px 30px;
+	padding: 0 27px 0 30px;
 	width: inherit !important;
 
 }
 
 .gallery_box li {
-	background: none !important;
 	padding-left: 0 !important;
+	background: none !important;
 }
 
 /*portfolio*/
@@ -1418,33 +1410,33 @@ body.attachment #respond {
 .page-template-portfolio-php .home_page_title,
 .single-portfolio .home_page_title {
 	padding: 53px 27px 6px 30px;
-    font-family: "Open Sans Bold";
-    font-weight: 300;
-	font-size: 23px !important;
 	border-bottom: none !important;
+	font-weight: 300;
+	font-size: 23px !important;
+	font-family: "Open Sans Bold";
 }
 
-.single-portfolio .portfolio_content{
-	padding: 0px 27px 0px 30px;	
+.single-portfolio .portfolio_content {
+	padding: 0 27px 0 30px;
 }
 
-.page-template-portfolio-php .home_page_title a	{
+.page-template-portfolio-php .home_page_title a {
 	color: #555555 !important;
 }
 
 .read_more a {
+	width: auto !important;
 	color: #fff !important;
-	width: auto !important; 
 }
 
 .page-template-portfolio-php .portfolio_content {
-	padding: 0px 27px 0px 30px;
-	width: inherit !important;	
+	padding: 0 27px 0 30px;
+	width: inherit !important;
 }
 
 /*Related posts*/
 .rltdpstsplgn_content {
-	padding: 0px 40px 0px;
+	padding: 0 40px 0;
 }
 
 .rltdpstsplgnwidget p {
@@ -1452,7 +1444,7 @@ body.attachment #respond {
 }
 
 /*Quotes and tips*/
-#quotes_box_and_tips{
+#quotes_box_and_tips {
 	margin: 0;
 	border-bottom: 1px solid #dbdbdb;
 }
@@ -1476,14 +1468,14 @@ img.alignleft,
 }
 
 img.alignright,
-.wp-caption.alignright  {
+.wp-caption.alignright {
 	margin-left: 15px;
 }
 
 .aligncenter {
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 .bicubic-img-title {
@@ -1523,7 +1515,6 @@ img,
 	color: #63ac2e;
 }
 
-
 /**
 * 6.6 Lists
 * ------------------------------------------------------------------------------
@@ -1531,35 +1522,33 @@ img,
 
 dt {
 	padding: 0 0 8px 30px;
+	color: #424242;
 	font-size: 15px;
 	font-family: "Droid Sans Bold", "Open Sans Bold";
-	color: #424242;
 }
 
 dd {
-	padding: 0 0 28px 30px;
 	margin: 0;
+	padding: 0 0 28px 30px;
 	color: #555;
 }
 
 ol {
-	padding: 0 10px 13px 48px;
-	list-style: decimal;
-	list-style-position: outside;
 	margin: 0;
+	padding: 0 10px 13px 48px;
+	list-style: decimal outside;
 }
 
 ol li {
-	color: #555;
 	padding: 0 0 14px 3px;
+	color: #555;
 }
 
-ul { 
+ul {
+	margin: 0;
 	padding: 0 10px 16px 33px;
 	color: #aaa;
-	list-style-position: outside;
-	list-style: none;
-	margin: 0;
+	list-style: none outside none;
 }
 
 ul > li {
@@ -1569,55 +1558,54 @@ ul > li {
 
 .post ul,
 .page ul,
-.comment > div  ul { 
-	padding: 0 10px 0 33px;
+.comment > div ul {
 	margin-bottom: 16px;
+	padding: 0 10px 0 33px;
 }
 
 .post ol ul,
 .page ol ul,
-.comment > div  ol ul,
+.comment > div ol ul,
 .post ul ul,
 .page ul ul,
-.comment > div  ul ul  {
+.comment > div ul ul {
 	padding: 0 10px 0 16px;
 }
 
 .post ul > li,
 .page ul > li,
 .comment > div ul > li {
-	background: url(image/ul-marker.png) no-repeat 0 8px;
-	padding: 0 0 0 17px;
 	margin-bottom: 5px;
+	padding: 0 0 0 17px;
+	background: url(image/ul-marker.png) no-repeat 0 8px;
 	line-height: 1.68;
 }
 
 .widget ul > li {
-	background: none;
 	margin: 0;
+	background: none;
 }
 
-
-.post ol, 
+.post ol,
 .page ol,
-.comment > div  ol {
+.comment > div ol {
 	padding: 0 10px 0 48px;
 }
 
 .post ul ol,
 .page ul ol,
-.comment > div  ul ol,
+.comment > div ul ol,
 .post ol ol,
 .page ol ol,
-.comment > div  ol ol  {
+.comment > div ol ol {
 	padding: 0 10px 0 24px;
 }
 
 .post ol > li,
 .page ol > li,
 .comment > div ol > li {
-	padding: 0 0 0 3px;
 	margin-bottom: 5px;
+	padding: 0 0 0 3px;
 	line-height: 1.68;
 }
 
@@ -1629,9 +1617,11 @@ ul > li {
 .comment > div li ol {
 	margin: 5px 0 0 0;
 }
+
 ol ol {
 	list-style: upper-alpha;
 }
+
 ol ol ol {
 	list-style: upper-roman;
 }
@@ -1641,26 +1631,27 @@ ol ol ol {
 }
 
 .widget_text .textwidget ol > li {
-	list-style: decimal inside;
+	padding: 0 0 13px;
 	color: #999999;
-    padding: 0 0 13px;
+	list-style: decimal inside;
 }
+
 .widget_text .textwidget ol,
 .widget_text .textwidget ul {
-	padding: 0 10px 13px 0px;
+	padding: 0 10px 13px 0;
 }
 
 .widget_text .textwidget ol ol,
 .widget_text .textwidget ul ul,
 .widget_text .textwidget ol ul,
 .widget_text .textwidget ul ol {
-	padding: 0 10px 0px 20px;
+	padding: 0 10px 0 20px;
 }
 
 .widget_text .textwidget ul > li {
-	list-style: disc inside;
-	padding: 0 0 13px;
 	margin-bottom: 5px;
+	padding: 0 0 13px;
+	list-style: disc inside;
 	line-height: 1.68;
 }
 
@@ -1676,33 +1667,34 @@ ol ol ol {
 .widget h6 {
 	padding: 0;
 }
-li.widget  {
-	line-height: 1 !important;
+
+li.widget {
 	padding-bottom: 45px !important;
+	line-height: 1 !important;
 }
+
 .bicubic-sidebar {
 	float: right;
-	height: 100%;
-	width: 338px;
+	width: 336px;
 }
 
 /*Title if widget*/
 .widgettitle {
 	padding: 18px 40px 17px;
-	color: #b2b2b2;
-	font-size: 12px !important; 
-	text-transform: uppercase;
 	border-top: 1px solid #dbdbdb;
 	border-bottom: 1px solid #dbdbdb;
+	color: #b2b2b2;
+	text-transform: uppercase;
+	font-size: 12px !important;
 	line-height: 1;
 }
 
 .widget li,
 .widget li ul {
-	list-style: none;
-	background:  none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	background: none;
+	list-style: none;
 	line-height: 1 !important;
 }
 
@@ -1714,7 +1706,7 @@ li.widget  {
 
 .widget li ul li {
 	padding: 0 0 13px;
-	color: #999;	
+	color: #999;
 }
 
 /*Calendar widget*/
@@ -1740,9 +1732,9 @@ li.widget  {
 
 #wp-calendar td,
 #wp-calendar th {
-	text-align: center;
 	height: 25px;
 	vertical-align: middle;
+	text-align: center;
 }
 
 #today {
@@ -1761,8 +1753,8 @@ li.widget  {
 
 .widget .children,
 .widget .menu .sub-menu {
-	border: none;
 	padding: 13px 0 0 15px;
+	border: none;
 }
 
 .widget .menu .sub-menu li:last-child {
@@ -1783,9 +1775,9 @@ li.widget  {
 
 /* search widget*/
 .widget_search #search {
-	padding: 0;
-	margin: 0 auto;
 	float: none;
+	margin: 0 auto;
+	padding: 0;
 	width: 230px;
 }
 
@@ -1808,19 +1800,19 @@ li.widget  {
 	color: #63Ac2e;
 }
 
-.widget .current_page_item a:hover{
+.widget .current_page_item a:hover {
 	color: #333 !important;
 }
 
 /*Rss widget*/
 .widget_rss li {
-	border-bottom: 1px solid #dbdbdb;
 	margin: 0 0 15px !important;
+	border-bottom: 1px solid #dbdbdb;
 }
 
 .widget_rss li:last-child {
-	border-bottom: none;
 	margin: 0 !important;
+	border-bottom: none;
 }
 
 .widgettitle .rsswidget {
@@ -1833,15 +1825,14 @@ li.widget  {
 
 .rss-date {
 	display: block;
-	color: #555;
 	padding: 5px 0 10px;
+	color: #555;
 }
 
 .rssSummary {
 	padding: 0 0 5px;
 	line-height: 1.68;
 }
-
 
 /**
 * 7.0 Footer
@@ -1850,11 +1841,11 @@ li.widget  {
 
 .bicubic-footer {
 	position: relative;
-	left: 0;
 	bottom: 0;
-	height: 58px;
+	left: 0;
 	margin-top: 44px;
 	width: 100%;
+	height: 58px;
 	border-top: 1px solid #dbdbdb;
 	background-color: #eee;
 }
@@ -1875,6 +1866,35 @@ li.widget  {
 	color: #333;
 }
 
-#powered a{
+#powered a {
 	color: #63ac2e;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	position: absolute !important;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+}
+
+.screen-reader-text:focus {
+	top: 5px;
+	left: 5px;
+	z-index: 100000;
+	display: block;
+	clip: auto !important;
+	padding: 15px 23px 14px;
+	width: auto;
+	height: auto;
+	border-radius: 3px;
+	background-color: #f1f1f1;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	color: #21759b;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: normal; /* Above WP toolbar. */
 }
