@@ -19,17 +19,10 @@
 				'before_widget' => '<li class="widget %s">',
 				'after_widget'  => '</li>',
 			);
-			$instance = array(
-				'hierarchical' => '1',
-				'count'        => '1',
-			);
-			// <!-- recent posts widget-->
-			the_widget( 'WP_Widget_Recent_Posts', 'number=5', $args );
-			// <!-- recent comments widget -->
-			the_widget( 'WP_Widget_Recent_Comments', 'number=3', $args );
-			// <!-- archives widget -->
+			$instance = array();
+			the_widget( 'WP_Widget_Recent_Posts', $instance, $args );
+			the_widget( 'WP_Widget_Recent_Comments', $instance, $args );
 			the_widget( 'WP_Widget_Archives', $instance, $args );
-			// <!-- categories widget -->
 			the_widget( 'WP_Widget_Categories', $instance, $args );
 		} ?>
 	</div>

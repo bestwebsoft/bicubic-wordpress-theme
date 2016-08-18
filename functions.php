@@ -66,14 +66,14 @@ function bicubic_scripts_styles() {
 	wp_enqueue_style( 'bicubic-style', get_stylesheet_uri() );
 	// loads the internet Explorer specific stylesheet.
 	wp_enqueue_style( 'bicubic-ie', get_template_directory_uri() . '/css/ie.css', array( 'bicubic-style' ) );
-	wp_style_add_data( 'bicubic-ie', 'conditional', 'lt IE 9' ); ?>
-	<!-- define vars for input:file -->
-	<script type="text/javascript">
-		var choose_file          = '<?php _e( 'Choose file...', 'bicubic' ); ?>';
-		var file_is_not_selected = '<?php _e( 'File is not selected', 'bicubic' ); ?>';
-		var bicubic_home_url     = '<?php echo home_url(); ?>';
-	</script>
-<?php }
+	wp_style_add_data( 'bicubic-ie', 'conditional', 'lt IE 9' );
+	$string_js = array(
+		'chooseFile'      => __( 'Choose file...', 'bicubic' ),
+		'fileNotSelected' => __( 'File is not selected', 'bicubic' ),
+		'homeUrl'        => home_url(),
+	);
+	wp_localize_script( 'bicubic-script', 'bicubicStringJs', $string_js );
+}
 
 //this function used as callback to wp_list_comments()
 function bicubic_comment( $comment, $args, $depth ) {

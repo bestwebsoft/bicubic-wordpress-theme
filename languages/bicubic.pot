@@ -1,32 +1,33 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: bicubic\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-21 16:26+0300\n"
+"Project-Id-Version: Bicubic v1.8\n"
+"POT-Creation-Date: 2016-08-18 15:42+0300\n"
 "PO-Revision-Date: \n"
-"Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
-"Language-Team: BestWebSoft <info@bestwebsoft.com>\n"
-"Language: ru_RU\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: BestWebSoft <wp_theme@bestwebsoft.com>\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
-"X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;"
+"_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: archive.php:21 index.php:18 search.php:23
-#, fuzzy
 msgid "Older posts"
-msgstr "Старые записи"
+msgstr ""
 
 #: archive.php:22 index.php:19 search.php:24
-#, fuzzy
 msgid "Newer posts"
-msgstr "Свежие записи"
+msgstr ""
 
 #: comments.php:20
 #, php-format
@@ -34,171 +35,141 @@ msgid "%1$s response to &#8220;%2$s&#8221;"
 msgid_plural "%1$s responses to &#8220;%2$s&#8221;"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: comments.php:23 comments.php:30
-#, fuzzy
 msgid "Older comments"
-msgstr "Старые комментарии"
+msgstr ""
 
 #: comments.php:24 comments.php:31
-#, fuzzy
 msgid "Newer comments"
-msgstr "Новые комментарии"
+msgstr ""
 
 #: comments.php:37
-#, fuzzy
 msgid "There are no comments"
-msgstr "Пока нет комментариев"
+msgstr ""
 
 #: comments.php:41
-#, fuzzy
 msgid "Comments are closed."
-msgstr "Комментарии запрещены"
+msgstr ""
 
 #: content-none.php:12 search.php:14
-#, fuzzy, php-format
+#, php-format
 msgid "Search Results for: %s"
-msgstr "Результаты поиска для: %s"
+msgstr ""
 
 #: content-none.php:15
-#, fuzzy
 msgid "Nothing found for your query. Try to find something else."
-msgstr "По вашему запросу ничего не найдено. Попробуйте поискать что-то другое."
+msgstr ""
 
 #: content-none.php:20
-#, fuzzy
 msgid "Ready to publish your first post?"
-msgstr "Готовы опубликовать свой первый пост?"
+msgstr ""
 
 #: content-none.php:20
-#, fuzzy
 msgid "Get started here"
-msgstr "Начните сдесь"
+msgstr ""
 
 #: content-none.php:23
-#, fuzzy
 msgid "No post yet"
-msgstr "Пока нет записей"
+msgstr ""
 
 #: content-none.php:26
-#, fuzzy
 msgid "Not found "
-msgstr "Не найдено"
+msgstr ""
 
 #: content-none.php:29
-#, fuzzy
 msgid "Seems that page does not exist. Try to find something else."
-msgstr "Кажется, такой страницы не существует. Попробуйте найти что-нибудь другое."
+msgstr ""
 
 #: content.php:19
-#, fuzzy
 msgid "Sticky post"
-msgstr "Прикрепленная запись"
+msgstr ""
 
-#: content.php:28 image.php:23
-#, fuzzy
+#: content.php:34 image.php:23
 msgid "Posted on"
-msgstr "Опубликовано"
+msgstr ""
 
-#: content.php:29 image.php:27
+#: content.php:42 image.php:27
 msgid "in"
 msgstr ""
 
-#: content.php:31 functions.php:125 functions.php:127 image.php:31
-#, fuzzy
+#: content.php:45 functions.php:125 functions.php:127 image.php:31
 msgid "(Edit)"
-msgstr "(Редактировать)"
+msgstr ""
 
-#: content.php:48
-#, fuzzy
+#: content.php:62
 msgid "Tags: "
-msgstr "Тэги: "
+msgstr ""
 
-#: content.php:53 page.php:27 single.php:17
-#, fuzzy
+#: content.php:67 page.php:27 single.php:17
 msgid "Top"
-msgstr "Наверх"
+msgstr ""
 
 #: footer.php:13
-#, fuzzy
 msgid "Powered by"
-msgstr "Создано"
+msgstr ""
 
 #: footer.php:14
 msgid "and"
 msgstr ""
 
 #: functions.php:30
-#, fuzzy
 msgid "Primary Menu"
-msgstr "Главное Меню"
+msgstr ""
 
 #: functions.php:47
-#, fuzzy
 msgid "Main Sidebar"
-msgstr "Главный сайдбар"
+msgstr ""
 
 #: functions.php:49
-#, fuzzy
 msgid "Widgets in this area will be shown on all posts and pages."
-msgstr "Виджеты в этой области будут показаны на всех постах и страницах."
+msgstr ""
+
+#: functions.php:71
+msgid "Choose file..."
+msgstr ""
 
 #: functions.php:72
-#, fuzzy
-msgid "Choose file..."
-msgstr "Выберете файл..."
-
-#: functions.php:73
-#, fuzzy
 msgid "File is not selected"
-msgstr "Файл выбран"
+msgstr ""
 
 #: functions.php:96
-#, fuzzy, php-format
+#, php-format
 msgid "%1$s at %2$s"
-msgstr "%1$s, %2$s "
+msgstr ""
 
 #: functions.php:102
-#, fuzzy
 msgid "says"
-msgstr "говорит"
+msgstr ""
 
 #: functions.php:111
-#, fuzzy
 msgid "Your comment is awaiting moderation."
-msgstr "Ваш комментарий ожидает модерации"
+msgstr ""
 
 #: functions.php:118
-#, fuzzy
 msgid "Reply"
-msgstr "Ответить"
+msgstr ""
 
 #: image.php:25
 msgid "at"
 msgstr ""
 
 #: image.php:26
-#, fuzzy
 msgid "Link to full-size image"
-msgstr "Ссылка на полноразмерное изображение"
+msgstr ""
 
 #: image.php:28
-#, fuzzy
 msgid "Return to"
-msgstr "Вернуться к "
+msgstr ""
 
 #: image.php:37
-#, fuzzy
 msgid "Previous"
-msgstr "Предыдущая"
+msgstr ""
 
 #: image.php:38
-#, fuzzy
 msgid "Next"
-msgstr "Следующий"
+msgstr ""
 
 #: searchform.php:13
-#, fuzzy
 msgid "Enter search keyword"
-msgstr "Поиск...."
+msgstr ""

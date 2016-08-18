@@ -1,11 +1,11 @@
 ﻿=== Bicubic ===
 Contributors: BestWebLayout, BestWebSoft
 Author URI: http://bestweblayout.com/
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
+Donate link: http://bestwebsoft.com/donate/
 Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.2
-Tested up to: 4.5.2
-Stable tag: 1.7
+Tested up to: 4.6
+Stable tag: 1.8
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Bicubic WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -105,7 +105,10 @@ Change the language in the admin settings screen. Settings > General > Site Lang
 
 == Changelog ==
 
-= v1.7 - 21.06.2016 =
+= V1.8 - 18.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
+
+= V1.7 - 21.06.2016 =
 * Bugfix: Fixed mismatch coding standards.
 * Bugfix: Fixed theme styles.
 * Update: Unnecessary files category.php and tag.php have been removed.
@@ -150,6 +153,9 @@ Change the language in the admin settings screen. Settings > General > Site Lang
 * NEW: Bicubic theme release.
 
 == Upgrade Notice ==
+
+= V1.8 =
+* The compatibility with new WordPress version updated.
 
 = V1.7 =
 Fixed mismatch coding standards. Fixed theme styles. Unnecessary files category.php and tag.php have been removed. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.2. Theme was transferred to new WordPress account.

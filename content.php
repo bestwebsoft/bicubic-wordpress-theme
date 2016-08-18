@@ -21,20 +21,34 @@ if ( is_search() ) : ?>
 <?php endif; ?>
 <!-- post title -->
 <div class="bicubic-post-title">
-	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	<h2>
+		<?php if ( is_singular() ) {
+			the_title();
+		} else {
+			the_title( '<a href="' . get_the_permalink() . '">', '</a>' );
+		} ?>
+	</h2>
 </div><!-- bicubic-post-title -->
 <!-- post date and category -->
 <div class="bicubic-post-date">
-	<?php _e( 'Posted on', 'bicubic' ); ?>
-	<a href="<?php the_permalink(); ?>"><?php the_time( 'j F, Y' ); ?></a> <?php _e( 'in', 'bicubic' ); ?>
-	<a href="#"><?php the_category( ', ' ); ?></a>
-	<?php edit_post_link( __( '(Edit)', 'bicubic' ) ); ?>
+	<?php _e( 'Posted on', 'bicubic' );
+	if ( is_singular() ) {
+		$bicubic_date_link = get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) );
+	} else {
+		$bicubic_date_link = get_the_permalink();
+	} ?>
+	<a href="<?php echo esc_url( $bicubic_date_link ); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date(); ?></a>
+	<?php if ( has_category() ) {
+		_e( 'in', 'bicubic' ); ?>
+		<a href="#"><?php the_category( ', ' ); ?></a>
+	<?php }
+	edit_post_link( __( '(Edit)', 'bicubic' ) ); ?>
 </div><!-- bicubic-post-date -->
 <!-- post content -->
 <?php if ( has_post_thumbnail() ) { // check if the post has a post thumbnail assigned to it.
 	the_post_thumbnail( 'bicubic-size' );
-} ?>
-<?php if ( is_search() ) { // display only excerpts for Search
+}
+if ( is_search() ) { // display only excerpts for Search
 	the_excerpt();
 } else {
 	the_content(); // display all content for other pages ?>

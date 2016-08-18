@@ -14,7 +14,7 @@ get_header(); ?>
 			<div <?php post_class(); ?>>
 				<!-- post title -->
 				<div class="bicubic-post-title">
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<h2><?php the_title(); ?></h2>
 				</div><!-- .bicubic-post-title -->
 				<!-- post content -->
 				<?php the_content(); ?>

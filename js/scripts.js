@@ -11,7 +11,7 @@
 		* work with form elements
 		* radiobuttons restyle
 		*/
-		$( 'input[type=radio]' ).wrap( '<div class="bicubic-radio"></div>' );		
+		$( 'input[type=radio]' ).wrap( '<div class="bicubic-radio"></div>' );
 		// hover realization
 		$( '.bicubic-radio' ).mouseenter( function () {
 				$( this ).addClass( 'bicubic-hover' );
@@ -65,8 +65,8 @@
 			$( this ).closest( 'form' ).find( '.bicubic-radio' ).removeClass( 'bicubic-active' );
 			$( this ).closest( 'form' ).find( '.bicubic-check' ).removeClass( 'bicubic-active' );
 			// reset input:file
-			$( this ).closest( 'form' ).find( '.bicubic-custom-file-text' ).text( choose_file );
-			$( this ).closest( 'form' ).find( '.bicubic-custom-file-status' ).text( file_is_not_selected );			
+			$( this ).closest( 'form' ).find( '.bicubic-custom-file-text' ).text( bicubicStringJs.chooseFile );
+			$( this ).closest( 'form' ).find( '.bicubic-custom-file-status' ).text( bicubicStringJs.fileNotSelected );
 		});
 
 		/*
@@ -115,7 +115,7 @@
 
 		// functional of new input:file
 		$( '.bicubic-custom-file' ).click( function () {
-			var file_input = document.getElementById( $( this ).find( '.bicubic-custom-file-status' ).attr('name') )
+			var file_input = document.getElementById( $( this ).find( '.bicubic-custom-file-status' ).attr('name') );
 			$( file_input ).click();
 
 		});
@@ -222,7 +222,7 @@
 			target = $( current ).prev( '.bicubic-dropdown-widget' );
 			$( current ).detach();
 			$( current ).appendTo( $( target ) );
-		};	
+		}
 
 		// archive-dropdown widget functional
 		$( '[name=archive-dropdown]' ).next( '.bicubic-select' ).find( '.bicubic-option' ).click( function () {
@@ -231,7 +231,7 @@
 		
 		// category-dropdown widget functional
 		$( '#cat' ).next( '.bicubic-select' ).find( '.bicubic-option' ).click( function () {
-			location.href = bicubic_home_url + '?cat=' + $( this ).attr( 'value' );
+			location.href = bicubicStringJs.homeUrl + '?cat=' + $( this ).attr( 'value' );
 		});
 		
 		// correct search widget
@@ -302,9 +302,9 @@ function CreateFileInput( k ) {
 		$( custom_file ).find( '.bicubic-custom-file-content' ).append( '<div class="bicubic-custom-file-text"></div>' );
 		$( custom_file ).find( '.bicubic-custom-file-content' ).append( '<div class="bicubic-custom-file-button"></div>' );
 		$( custom_file ).append( '<div class="bicubic-custom-file-status"></div>' );
-		$( custom_file ).find('.bicubic-custom-file-status').attr( 'name', $( 'input:file' ).eq(k).attr( 'id' ))
-		$( custom_file ).find( '.bicubic-custom-file-text' ).text( choose_file );
-		$( custom_file ).find( '.bicubic-custom-file-status' ).text( file_is_not_selected );
+		$( custom_file ).find('.bicubic-custom-file-status').attr( 'name', $( 'input:file' ).eq(k).attr( 'id' ));
+		$( custom_file ).find( '.bicubic-custom-file-text' ).text( bicubicStringJs.chooseFile );
+		$( custom_file ).find( '.bicubic-custom-file-status' ).text( bicubicStringJs.fileNotSelected );
 		// $( custom_file ).append( '<div class="bicubic-clear"></div>' );
 	} )( jQuery );
 	return custom_file;
@@ -316,7 +316,7 @@ function createInputAttr() {
 		var size = $( 'input:file' ).size();
 		for (var i = 0; i < size; i++) {
 			$( 'input:file' ).eq(i).attr( 'id', 'file-' + i ).css( 'display', 'none' ).after( CreateFileInput( i ) );
-		};
+		}
 	} )( jQuery );
 }
 
@@ -346,7 +346,7 @@ function CreateSelect( k ) {
 				$( optgroups[i] ).addClass( 'bicubic-optgroup' );
 				$( optgroups[i] )
 					.text( $( 'select' ).eq( k ).find( 'optgroup' ).eq( i ).attr( 'label' ) );
-			};
+			}
 			for ( var i = 0; i < count; i++ ) {
 				$( options ).append( optgroups[i] );
 				for ( var j = 0; j < $( 'select' ).eq( k ).find( 'optgroup' ).eq( i ).children().size(); j++ ) {
@@ -357,8 +357,8 @@ function CreateSelect( k ) {
 					$( opt ).attr( 'name', z );
 					z++;
 					$( options ).append( opt );
-				};
-			};
+				}
+			}
 		} else {
 			for ( var i = 0; i < $( 'select' ).eq( k ).find( 'option' ).size(); i++ ) {
 				var opt = document.createElement( 'div' );
@@ -367,8 +367,8 @@ function CreateSelect( k ) {
 				$( opt ).attr( 'name', i );
 				$( opt ).text( $( 'select' ).eq( k ).find( 'option' ).eq( i ).text() );
 				$( options ).append( opt );
-			};
-		};
+			}
+		}
 		$( sel ).append( active_opt );
 		$( sel ).append( options );
 	} )( jQuery );
